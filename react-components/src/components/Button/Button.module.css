@@ -1,0 +1,72 @@
+.button {
+  border: 0;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-scale-1);
+  background-color: var(--color-scale-2);
+  font-size: large;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 5px var(--color-scale-4);
+}
+
+.button:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px var(--color-scale-4);
+}
+
+.button:disabled {
+  background-color: var(--color-scale-gray) !important;
+  pointer-events: none;
+}
+
+.button:hover {
+  background-color: var(--color-scale-1);
+  color: var(--color-scale-2);
+}
+
+.magic:hover {
+  color: pink;
+  animation: roundBorder 1s infinite linear, pulseBorder 1s infinite linear, expand 10s infinite linear;
+}
+
+@keyframes roundBorder {
+  from {
+    border-radius: 5px;
+  }
+  to {
+    border-radius: 100%;
+  }
+}
+
+@keyframes pulseBorder {
+  0% {
+    border: solid 1px blue;
+  }
+  50% {
+    border: solid 5px white;
+  }
+  75% {
+    border: solid 10px red;
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(4);
+  }
+  50% {
+    transform: scale(8);
+  }
+  75% {
+    transform: scale(4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

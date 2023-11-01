@@ -1,0 +1,14 @@
+
+.mainElement {
+  height: 100%;
+  overflow: auto;
+  background-color: var(--color-scale-1);
+  padding: 20px;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

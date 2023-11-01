@@ -1,0 +1,21 @@
+:root {
+  --color-scale-white: #fff;
+  --color-scale-black: #000;
+  --color-scale-gray: #808080;
+  --color-scale-1: #FFF1D4;
+  --color-scale-2: #312100;
+  --color-scale-3: #D5BAA9;
+  --color-scale-4: #91868E;
+  --color-scale-4: #7A522F;
+
+  --color-scale-success: #5cb85c;
+  --color-scale-warning: #f0ad4e;
+  --color-scale-error: #d9534f;
+  --color-scale-info: #5bc0de;
+}
+
+main {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}

@@ -1,0 +1,15 @@
+.navLink {
+    color: var(--color-scale-1);
+    background-color: var(--color-scale-2) !important;
+    border: 5px solid var(--color-scale-3);
+  }
+
+.navLink[class~="active"] {
+  color: var(--color-scale-2);
+  background-color: var(--color-scale-1) !important;
+}
+
+.header {
+  width: 100%;
+  height: 10vh;
+}
